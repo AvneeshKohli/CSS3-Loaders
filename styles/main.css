@@ -1,0 +1,11 @@
+@import url("loader1.css");
+@import url("loader2.css");
+@import url("loader3.css");
+@import url("loader4.css");
+@import url("loader5.css");
+@import url("loader6.css");
+@import url("loader7.css");
+
+body {
+    background-color: #c7f2ff;
+}

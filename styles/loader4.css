@@ -1,0 +1,39 @@
+.loader-4,
+.loader-4::before,
+.loader-4::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: inflate-deflate 1s ease-in-out infinite ;
+}
+.wrapper-4 {
+    position: absolute;
+    top: 250px;
+    left: 39%;
+}
+
+.loader-4::before,
+.loader-4::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+}
+
+.loader-4::before {
+    left: -35px;
+    animation-delay: -0ms;
+    animation-delay: -150ms;
+}
+
+.loader-4::after {
+    left: 35px;
+    animation-delay: 150ms;
+}
+@keyframes inflate-deflate {
+    0%,80%, 100%{
+        box-shadow: 0 30px 0 -15px;
+    }
+    50% {
+        box-shadow: 0 30px 0 0;
+    }
+}

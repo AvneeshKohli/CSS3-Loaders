@@ -1,0 +1,32 @@
+.loader-7 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+.wrapper-7 {
+    position: absolute;
+    top: 45px;
+    left: 80%;
+
+}
+.disc-1, .disc-2 {
+    width: 90%;
+    height: 90%;
+    background-color: tomato;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 50%;
+    animation: shrink 2s ease-in-out infinite;
+}
+.disc-2 {
+    animation-delay: -1s;
+}
+@keyframes shrink {
+    0%, 100% {
+        transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+}
+

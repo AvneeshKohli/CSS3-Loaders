@@ -1,0 +1,29 @@
+.wrapper-6 {
+    position: absolute;
+    top: 265px;
+    left: 61%;
+}
+
+.loader-6 {
+    width: 60px;
+    height: 60px;
+    background-color: tomato; 
+    position: absolute;
+    animation: fold 1s ease-in-out infinite;
+
+}
+
+@keyframes fold {
+    0% {
+        transform: perspective(60px) rotate(0deg,0deg);
+    }
+    50% {
+        transform: perspective(60px) rotateX(-180deg) rotateY(0deg);
+        width: 40px;
+        height: 40px;
+        transform-origin: 28px 25px;
+    }
+    100% {
+        transform: perspective(60px) rotateX(-180deg) rotateY(-180deg); 
+    }
+}
